@@ -1,0 +1,7 @@
+---
+description: NOVA kit rules
+alwaysApply: true
+---
+
+Before any change, read `AGENTS.md` at the repo root and follow it. Visual work must follow
+`ai/design-system.md`; reuse components from `ai/components.md`; task playbooks are in `ai/playbooks/`.

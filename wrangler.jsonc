@@ -1,0 +1,13 @@
+// Cloudflare deploy for the static build: `npm run deploy:cloudflare`
+// (runs `next build` → `out/`, then serves that folder from Cloudflare's edge).
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "nova-kit",
+  "compatibility_date": "2026-09-21",
+  "assets": {
+    "directory": "./out",
+    // /company → company.html, unknown URLs → 404.html
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
