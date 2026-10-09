@@ -1,0 +1,1 @@
+# synova-ai-landing
